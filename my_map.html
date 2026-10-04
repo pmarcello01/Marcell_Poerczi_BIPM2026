@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_19d23b6ed3b426caa01c5b8907f2e59e {
+                #map_c3f1bc9e132c68fbb4a16380b4e4dd1a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,19 +54,19 @@
 <body>
     
     
-            <div class="folium-map" id="map_19d23b6ed3b426caa01c5b8907f2e59e" ></div>
+            <div class="folium-map" id="map_c3f1bc9e132c68fbb4a16380b4e4dd1a" ></div>
         
 </body>
 <script>
     
     
-            var map_19d23b6ed3b426caa01c5b8907f2e59e = L.map(
-                "map_19d23b6ed3b426caa01c5b8907f2e59e",
+            var map_c3f1bc9e132c68fbb4a16380b4e4dd1a = L.map(
+                "map_c3f1bc9e132c68fbb4a16380b4e4dd1a",
                 {
-                    center: [47.485, 19.0325],
+                    center: [50.5, 16.3],
                     crs: L.CRS.EPSG3857,
                     ...{
-  "zoom": 12,
+  "zoom": 4,
   "zoomControl": true,
   "preferCanvas": false,
 }
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_0203538ac9d0b406f667b19e7b4aed95 = L.tileLayer(
+            var tile_layer_e28ccae75a52ddd5f0c6cbefea45caf9 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,55 +95,109 @@
             );
         
     
-            tile_layer_0203538ac9d0b406f667b19e7b4aed95.addTo(map_19d23b6ed3b426caa01c5b8907f2e59e);
+            tile_layer_e28ccae75a52ddd5f0c6cbefea45caf9.addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a);
         
     
-            var marker_c43c6f495f8b57a0b93d693ce816a06f = L.marker(
+            var marker_ae8a4bf2fd2802e7d2ad05e1d37e4703 = L.marker(
                 [47.485, 19.0548],
                 {
 }
-            ).addTo(map_19d23b6ed3b426caa01c5b8907f2e59e);
+            ).addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a);
         
     
-        var popup_16015e619cbcf5da64bb248303b867b6 = L.popup({
+            var icon_bea5a7fca325db07b99d95db29444c57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e6db248416b9b994b52ceb2061600f4 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8d939f5f633526991308d1a3f9107716 = $(`<div id="html_8d939f5f633526991308d1a3f9107716" style="width: 100.0%; height: 100.0%;">Bachelors's Degree at Corvinus University of Budapest</div>`)[0];
-                popup_16015e619cbcf5da64bb248303b867b6.setContent(html_8d939f5f633526991308d1a3f9107716);
+                var html_83afa59b96800f3e2840ca5d025070fd = $(`<div id="html_83afa59b96800f3e2840ca5d025070fd" style="width: 100.0%; height: 100.0%;">Bachelor's Degree at Corvinus University of Budapest</div>`)[0];
+                popup_0e6db248416b9b994b52ceb2061600f4.setContent(html_83afa59b96800f3e2840ca5d025070fd);
             
         
 
-        marker_c43c6f495f8b57a0b93d693ce816a06f.bindPopup(popup_16015e619cbcf5da64bb248303b867b6)
+        marker_ae8a4bf2fd2802e7d2ad05e1d37e4703.bindPopup(popup_0e6db248416b9b994b52ceb2061600f4)
         ;
 
         
     
     
-            var marker_222ff880321d2cfbbd41bd304a041735 = L.marker(
+            marker_ae8a4bf2fd2802e7d2ad05e1d37e4703.bindTooltip(
+                `<div>
+                     Budapest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae8a4bf2fd2802e7d2ad05e1d37e4703.setIcon(icon_bea5a7fca325db07b99d95db29444c57);
+            
+    
+            var marker_fb17bc2dd79fbf661747176941cae47e = L.marker(
                 [52.479, 13.352],
                 {
 }
-            ).addTo(map_19d23b6ed3b426caa01c5b8907f2e59e);
+            ).addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a);
         
     
-        var popup_12f26d699ee916b88711d9cdbd76f2c8 = L.popup({
+            var icon_e2923b2f97542af8899a9ae1e62ce132 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_872ab4f8e6e543c071498ca08f6e1c0d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a3b005b30c206d1b9f4863187ba9bae2 = $(`<div id="html_a3b005b30c206d1b9f4863187ba9bae2" style="width: 100.0%; height: 100.0%;">Masters's Degree at HWR Berlin</div>`)[0];
-                popup_12f26d699ee916b88711d9cdbd76f2c8.setContent(html_a3b005b30c206d1b9f4863187ba9bae2);
+                var html_c7b39d4de5de9439c4293186df0b5f0c = $(`<div id="html_c7b39d4de5de9439c4293186df0b5f0c" style="width: 100.0%; height: 100.0%;">Master's Degree at HWR Berlin</div>`)[0];
+                popup_872ab4f8e6e543c071498ca08f6e1c0d.setContent(html_c7b39d4de5de9439c4293186df0b5f0c);
             
         
 
-        marker_222ff880321d2cfbbd41bd304a041735.bindPopup(popup_12f26d699ee916b88711d9cdbd76f2c8)
+        marker_fb17bc2dd79fbf661747176941cae47e.bindPopup(popup_872ab4f8e6e543c071498ca08f6e1c0d)
         ;
 
         
     
+    
+            marker_fb17bc2dd79fbf661747176941cae47e.bindTooltip(
+                `<div>
+                     Berlin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb17bc2dd79fbf661747176941cae47e.setIcon(icon_e2923b2f97542af8899a9ae1e62ce132);
+            
+    
+            var poly_line_6c427dd015e971f3564eb6fd2be23843 = L.polyline(
+                [[47.485, 19.0548], [52.479, 13.352]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a);
+        
 </script>
 </html>
