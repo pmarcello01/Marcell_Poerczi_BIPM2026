@@ -2,6 +2,7 @@
 This is my class project repo.
 
 The introduction website is in [Intro Site/index.html](Intro%20Site/index.html).
+The root `index.html` redirects GitHub Pages visitors to that page, preserving the folder structure.
 
 - [Interactive map](Intro%20Site/my_map.html)
 - [Map notebook](Intro%20Site/map.ipynb), used to generate the interactive map
