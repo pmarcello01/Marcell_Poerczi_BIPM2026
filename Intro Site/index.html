@@ -98,10 +98,23 @@
     a.entry-detail { color: var(--color-ink); text-decoration-color: var(--color-border); }
     a.entry-detail:hover { color: var(--color-accent); text-decoration-color: currentColor; }
     .studies-title { margin-top: var(--space-6); }
-    .fun-fact { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); align-items: center; margin: 0; overflow: hidden; border: 1px solid var(--color-border); border-radius: var(--radius-panel); background: var(--color-surface-alt); }
-    .fun-fact img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
-    .fun-fact-copy { padding: var(--space-6) var(--space-7); }
-    .fun-fact p { color: var(--color-muted); font-size: 1.125rem; line-height: 1.8; margin: 0; max-width: 420px; }
+    .carousel { min-width: 0; overflow: hidden; border: 1px solid var(--color-border); border-radius: var(--radius-panel); background: var(--color-surface-alt); }
+    .carousel-heading { margin: 0; padding: var(--space-4) var(--space-5); font-size: 1.25rem; }
+    .carousel-slide { margin: 0; }
+    .carousel-slide[hidden] { display: none; }
+    .carousel-slide img { display: block; width: 100%; height: clamp(260px, 45vw, 520px); object-fit: contain; background: #e3eef3; }
+    .carousel-slide figcaption { padding: var(--space-4) var(--space-5); }
+    .carousel-slide h3 { margin: 0 0 4px; font-size: 1.25rem; font-weight: 500; }
+    .carousel-slide p { margin: 0; color: var(--color-muted); }
+    .carousel-controls { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); padding: 0 var(--space-5) var(--space-4); }
+    .carousel-controls button { min-width: 44px; min-height: 44px; padding: 8px 14px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-ink); font: inherit; cursor: pointer; }
+    .carousel-controls button:hover { background: var(--color-accent-soft); }
+    .carousel-controls button:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+    .carousel-dots { display: flex; gap: 4px; }
+    .carousel-dots button { min-width: 44px; padding: 0; border: 0; background: transparent; }
+    .carousel-dots button::after { content: ''; display: block; width: 8px; height: 8px; margin: auto; border-radius: 50%; background: var(--color-border); }
+    .carousel-dots button[aria-current="true"]::after { background: var(--color-accent); }
+    .carousel-status { color: var(--color-muted); font-size: .8125rem; white-space: nowrap; }
     .map-section { min-width: 0; }
     .map-heading { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); margin-bottom: var(--space-4); padding-inline: var(--space-1); }
     .map-heading h2 { margin-bottom: var(--space-1); }
@@ -115,8 +128,6 @@
     @media (max-width: 1024px) {
       .hero { grid-template-columns: minmax(0, 1fr) 240px; gap: var(--space-5); padding: var(--space-8) var(--space-5); }
       .background { padding: var(--space-5); }
-      .fun-fact { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); }
-      .fun-fact-copy { padding: var(--space-5); }
     }
     @media (max-width: 800px) {
       .container { width: calc(100% - 48px); }
@@ -127,7 +138,6 @@
       h1 { font-size: 2.75rem; }
       .eyebrow { font-size: .625rem; letter-spacing: .08em; }
       .intro { font-size: 1rem; }
-      .fun-fact { grid-template-columns: minmax(0, 260px) minmax(0, 1fr); }
       th, td { padding-inline: var(--space-2); }
       .organisation-entry { gap: var(--space-2); }
     }
@@ -154,9 +164,10 @@
       .entry-title { font-size: .9375rem; }
       .entry-detail { font-size: .8125rem; }
       .studies-title { margin-top: var(--space-5); }
-      .fun-fact { grid-template-columns: 1fr; border-radius: var(--radius-lg); }
-      .fun-fact-copy { padding: var(--space-5) var(--space-4); }
-      .fun-fact p { font-size: 1rem; }
+      .carousel { border-radius: var(--radius-lg); }
+      .carousel-heading, .carousel-slide figcaption { padding: var(--space-4); }
+      .carousel-controls { padding-inline: var(--space-3); flex-wrap: wrap; }
+      .carousel-status { width: 100%; text-align: center; order: 1; }
       .map-heading { padding-inline: 0; }
       .map-frame { height: 65vh; min-height: 360px; }
       footer { flex-direction: column; padding-block: var(--space-5); }
@@ -229,11 +240,36 @@
           </table>
         </div>
       </section>
-      <section class="fun-fact" aria-labelledby="fun-fact-title">
-        <img src="assets/emergency-medical-technician.jpg" alt="Marcell wearing his emergency medical uniform beside a boat" width="750" height="750" loading="lazy" />
-        <div class="fun-fact-copy">
-          <h2 id="fun-fact-title">Fun fact <span role="img" aria-label="Ambulance">🚑</span></h2>
-          <p>After high school, I started out as an Emergency Medical Technician.</p>
+      <section class="carousel" aria-labelledby="carousel-title" aria-roledescription="carousel">
+        <h2 class="carousel-heading" id="carousel-title">Places along my journey</h2>
+        <div class="carousel-slides">
+          <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 of 4">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.TIjUI7nca7dtOAHKqTklegHaEK?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="The main square in Pécs, with its fountain and historic buildings" loading="lazy" />
+            <figcaption><h3>Pécs</h3><p>My hometown.</p></figcaption>
+          </figure>
+          <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 4" hidden>
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pannonhalma_-_Benc%C3%A9s_ap%C3%A1ts%C3%A1g.jpg/500px-Pannonhalma_-_Benc%C3%A9s_ap%C3%A1ts%C3%A1g.jpg" alt="An aerial view of Pannonhalma Abbey and its school" loading="lazy" />
+            <figcaption><h3>Pannonhalma</h3><p>Where I went to high school.</p></figcaption>
+          </figure>
+          <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 4" hidden>
+            <img src="assets/emergency-medical-technician.jpg" alt="Marcell wearing his emergency medical uniform beside an ambulance boat" width="750" height="750" loading="lazy" />
+            <figcaption><h3>National Ambulance Service, Hungary</h3><p>After high school, I started out as an Emergency Medical Technician.</p></figcaption>
+          </figure>
+          <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 4" hidden>
+            <img src="https://www.uni-corvinus.hu/contents/uploads/2022/03/Corvinus-epulet40-1536x1024.jpg" alt="The historic facade of Corvinus University of Budapest" loading="lazy" />
+            <figcaption><h3>Corvinus University of Budapest</h3><p>Where I studied Business and Management.</p></figcaption>
+          </figure>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" data-carousel-prev aria-label="Previous slide">←</button>
+          <div class="carousel-dots" aria-label="Choose a slide">
+            <button type="button" data-carousel-slide="0" aria-label="Show Pécs" aria-current="true"></button>
+            <button type="button" data-carousel-slide="1" aria-label="Show Pannonhalma"></button>
+            <button type="button" data-carousel-slide="2" aria-label="Show the ambulance boat"></button>
+            <button type="button" data-carousel-slide="3" aria-label="Show Corvinus University of Budapest"></button>
+          </div>
+          <span class="carousel-status" aria-live="polite" aria-atomic="true">1 / 4 · Pécs</span>
+          <button type="button" data-carousel-next aria-label="Next slide">→</button>
         </div>
       </section>
       <section class="map-section" id="map" aria-labelledby="map-title">
@@ -254,6 +290,43 @@
     </footer>
   </div>
   <script>
+    (() => {
+      const carousel = document.querySelector('.carousel');
+      const slides = [...carousel.querySelectorAll('.carousel-slide')];
+      const dots = [...carousel.querySelectorAll('[data-carousel-slide]')];
+      const status = carousel.querySelector('.carousel-status');
+      let current = 0;
+      const show = index => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => { slide.hidden = i !== current; });
+        dots.forEach((dot, i) => {
+          if (i === current) dot.setAttribute('aria-current', 'true');
+          else dot.removeAttribute('aria-current');
+        });
+        status.textContent = `${current + 1} / ${slides.length} · ${slides[current].querySelector('h3').textContent}`;
+      };
+      carousel.querySelector('[data-carousel-prev]').addEventListener('click', () => show(current - 1));
+      carousel.querySelector('[data-carousel-next]').addEventListener('click', () => show(current + 1));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+      carousel.addEventListener('keydown', event => {
+        if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+        event.preventDefault();
+        show(current + (event.key === 'ArrowRight' ? 1 : -1));
+      });
+      let touchStart = null;
+      const viewport = carousel.querySelector('.carousel-slides');
+      viewport.addEventListener('touchstart', event => {
+        touchStart = event.touches.length === 1 ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null;
+      }, { passive: true });
+      viewport.addEventListener('touchend', event => {
+        if (!touchStart) return;
+        const dx = event.changedTouches[0].clientX - touchStart.x;
+        const dy = event.changedTouches[0].clientY - touchStart.y;
+        if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(current + (dx < 0 ? 1 : -1));
+        touchStart = null;
+      }, { passive: true });
+      viewport.addEventListener('touchcancel', () => { touchStart = null; }, { passive: true });
+    })();
     (() => {
       const pattern = document.querySelector('.page-pattern');
       const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
