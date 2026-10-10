@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
+
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c3f1bc9e132c68fbb4a16380b4e4dd1a {
+                #map_dbf2c3575a8cdc1134024b70bda56e20 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -49,19 +49,19 @@
                 L_DISABLE_3D = false;
             </script>
 
-        
+
 </head>
 <body>
-    
-    
-            <div class="folium-map" id="map_c3f1bc9e132c68fbb4a16380b4e4dd1a" ></div>
-        
+
+
+            <div class="folium-map" id="map_dbf2c3575a8cdc1134024b70bda56e20" ></div>
+
 </body>
 <script>
-    
-    
-            var map_c3f1bc9e132c68fbb4a16380b4e4dd1a = L.map(
-                "map_c3f1bc9e132c68fbb4a16380b4e4dd1a",
+
+
+            var map_dbf2c3575a8cdc1134024b70bda56e20 = L.map(
+                "map_dbf2c3575a8cdc1134024b70bda56e20",
                 {
                     center: [50.5, 16.3],
                     crs: L.CRS.EPSG3857,
@@ -74,11 +74,11 @@
                 }
             );
 
-            
 
-        
-    
-            var tile_layer_e28ccae75a52ddd5f0c6cbefea45caf9 = L.tileLayer(
+
+
+
+            var tile_layer_b3dce9631e9a7112d3194345a4106896 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -93,19 +93,19 @@
 }
 
             );
-        
-    
-            tile_layer_e28ccae75a52ddd5f0c6cbefea45caf9.addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a);
-        
-    
-            var marker_ae8a4bf2fd2802e7d2ad05e1d37e4703 = L.marker(
+
+
+            tile_layer_b3dce9631e9a7112d3194345a4106896.addTo(map_dbf2c3575a8cdc1134024b70bda56e20);
+
+
+            var marker_346709c947a609b379c55cdbf6446847 = L.marker(
                 [47.485, 19.0548],
                 {
 }
-            ).addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a);
-        
-    
-            var icon_bea5a7fca325db07b99d95db29444c57 = L.AwesomeMarkers.icon(
+            ).addTo(map_dbf2c3575a8cdc1134024b70bda56e20);
+
+
+            var icon_440ce51c413f519e0c133c479b07dd23 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -114,78 +114,48 @@
   "extraClasses": "fa-rotate-0",
 }
             );
-        
-    
-        var popup_0e6db248416b9b994b52ceb2061600f4 = L.popup({
+
+
+        var popup_5466dd289c0805d84d5440e6a9b0b011 = L.popup({
   "maxWidth": "100%",
 });
 
-        
-            
-                var html_83afa59b96800f3e2840ca5d025070fd = $(`<div id="html_83afa59b96800f3e2840ca5d025070fd" style="width: 100.0%; height: 100.0%;">Bachelor's Degree at Corvinus University of Budapest</div>`)[0];
-                popup_0e6db248416b9b994b52ceb2061600f4.setContent(html_83afa59b96800f3e2840ca5d025070fd);
-            
-        
 
-        marker_ae8a4bf2fd2802e7d2ad05e1d37e4703.bindPopup(popup_0e6db248416b9b994b52ceb2061600f4)
+
+                var html_6f13cda0cade5bbfedbbdf96913b3c2e = $(`<div id="html_6f13cda0cade5bbfedbbdf96913b3c2e" style="width: 100.0%; height: 100.0%;">Bachelor's Degree at Corvinus University of Budapest</div>`)[0];
+                popup_5466dd289c0805d84d5440e6a9b0b011.setContent(html_6f13cda0cade5bbfedbbdf96913b3c2e);
+
+
+
+        marker_346709c947a609b379c55cdbf6446847.bindPopup(popup_5466dd289c0805d84d5440e6a9b0b011)
         ;
 
-        
-    
-    
-            marker_ae8a4bf2fd2802e7d2ad05e1d37e4703.bindTooltip(
+
+
+
+            marker_346709c947a609b379c55cdbf6446847.bindTooltip(
                 `<div>
                      Corvinus University of Budapest
                  </div>`,
                 {
   "permanent": true,
   "direction": "top",
+  "sticky": true,
 }
             );
-        
-    
-                marker_ae8a4bf2fd2802e7d2ad05e1d37e4703.setIcon(icon_bea5a7fca325db07b99d95db29444c57);
 
-            // Additional places featured in the journey carousel.
-            [
-                {
-                    name: "Pécs",
-                    coordinates: [46.076, 18.228],
-                    description: "My hometown in southern Hungary.",
-                    icon: "home",
-                    color: "green"
-                },
-                {
-                    name: "Pannonhalma",
-                    coordinates: [47.553, 17.761],
-                    description: "Where I went to high school.",
-                    icon: "graduation-cap",
-                    color: "orange"
-                }
-            ].forEach(function (place) {
-                L.marker(place.coordinates, {
-                    title: place.name,
-                    icon: L.AwesomeMarkers.icon({
-                        markerColor: place.color,
-                        iconColor: "white",
-                        icon: place.icon,
-                        prefix: "fa"
-                    })
-                })
-                    .addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a)
-                    .bindTooltip(place.name, { permanent: true, direction: "top" })
-                    .bindPopup("<strong>" + place.name + "</strong><br>" + place.description);
-            });
-            
-    
-            var marker_fb17bc2dd79fbf661747176941cae47e = L.marker(
+
+                marker_346709c947a609b379c55cdbf6446847.setIcon(icon_440ce51c413f519e0c133c479b07dd23);
+
+
+            var marker_519bc1566966b322042d2ed5835e3e1f = L.marker(
                 [52.479, 13.352],
                 {
 }
-            ).addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a);
-        
-    
-            var icon_e2923b2f97542af8899a9ae1e62ce132 = L.AwesomeMarkers.icon(
+            ).addTo(map_dbf2c3575a8cdc1134024b70bda56e20);
+
+
+            var icon_de47970551c567b1c4526d4f6109e696 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -194,26 +164,26 @@
   "extraClasses": "fa-rotate-0",
 }
             );
-        
-    
-        var popup_872ab4f8e6e543c071498ca08f6e1c0d = L.popup({
+
+
+        var popup_c392b866376956ced0c71569ce10e7dc = L.popup({
   "maxWidth": "100%",
 });
 
-        
-            
-                var html_c7b39d4de5de9439c4293186df0b5f0c = $(`<div id="html_c7b39d4de5de9439c4293186df0b5f0c" style="width: 100.0%; height: 100.0%;">Master's Degree at HWR Berlin</div>`)[0];
-                popup_872ab4f8e6e543c071498ca08f6e1c0d.setContent(html_c7b39d4de5de9439c4293186df0b5f0c);
-            
-        
 
-        marker_fb17bc2dd79fbf661747176941cae47e.bindPopup(popup_872ab4f8e6e543c071498ca08f6e1c0d)
+
+                var html_6979547d3aa8293082bf0b5e703b0059 = $(`<div id="html_6979547d3aa8293082bf0b5e703b0059" style="width: 100.0%; height: 100.0%;">Master's Degree at HWR Berlin</div>`)[0];
+                popup_c392b866376956ced0c71569ce10e7dc.setContent(html_6979547d3aa8293082bf0b5e703b0059);
+
+
+
+        marker_519bc1566966b322042d2ed5835e3e1f.bindPopup(popup_c392b866376956ced0c71569ce10e7dc)
         ;
 
-        
-    
-    
-            marker_fb17bc2dd79fbf661747176941cae47e.bindTooltip(
+
+
+
+            marker_519bc1566966b322042d2ed5835e3e1f.bindTooltip(
                 `<div>
                      Berlin
                  </div>`,
@@ -221,15 +191,121 @@
   "sticky": true,
 }
             );
-        
-    
-                marker_fb17bc2dd79fbf661747176941cae47e.setIcon(icon_e2923b2f97542af8899a9ae1e62ce132);
-            
-    
-            var poly_line_6c427dd015e971f3564eb6fd2be23843 = L.polyline(
+
+
+                marker_519bc1566966b322042d2ed5835e3e1f.setIcon(icon_de47970551c567b1c4526d4f6109e696);
+
+
+            var poly_line_2ea54d0b3bfc3a70233c41ef8cd74356 = L.polyline(
                 [[47.485, 19.0548], [52.479, 13.352]],
                 {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a);
-        
+            ).addTo(map_dbf2c3575a8cdc1134024b70bda56e20);
+
+
+            var marker_5057a79efb48486fe951e0b5a9b1d7a0 = L.marker(
+                [46.076, 18.228],
+                {
+}
+            ).addTo(map_dbf2c3575a8cdc1134024b70bda56e20);
+
+
+            var icon_9f1f28d71dbf82fe953e90da4886ecd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_ae9d28b829a3f88298bc4d89cca79580 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_48222817e0180e28709ceea5c63f7e6d = $(`<div id="html_48222817e0180e28709ceea5c63f7e6d" style="width: 100.0%; height: 100.0%;"><strong>Pécs</strong><br>My hometown in southern Hungary.</div>`)[0];
+                popup_ae9d28b829a3f88298bc4d89cca79580.setContent(html_48222817e0180e28709ceea5c63f7e6d);
+
+
+
+        marker_5057a79efb48486fe951e0b5a9b1d7a0.bindPopup(popup_ae9d28b829a3f88298bc4d89cca79580)
+        ;
+
+
+
+
+            marker_5057a79efb48486fe951e0b5a9b1d7a0.bindTooltip(
+                `<div>
+                     Pécs
+                 </div>`,
+                {
+  "permanent": true,
+  "direction": "top",
+  "sticky": true,
+}
+            );
+
+
+                marker_5057a79efb48486fe951e0b5a9b1d7a0.setIcon(icon_9f1f28d71dbf82fe953e90da4886ecd9);
+
+
+            var marker_0634cdd41b6d3dec3c586d80f21c2a91 = L.marker(
+                [47.553, 17.761],
+                {
+}
+            ).addTo(map_dbf2c3575a8cdc1134024b70bda56e20);
+
+
+            var icon_fd3804212a63c12f998021034b0c064c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_3969d968668557c59a21637bd5377aac = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_5dc3b5f86b153cafb9a86e358d378a5b = $(`<div id="html_5dc3b5f86b153cafb9a86e358d378a5b" style="width: 100.0%; height: 100.0%;"><strong>Pannonhalma</strong><br>Where I went to high school.</div>`)[0];
+                popup_3969d968668557c59a21637bd5377aac.setContent(html_5dc3b5f86b153cafb9a86e358d378a5b);
+
+
+
+        marker_0634cdd41b6d3dec3c586d80f21c2a91.bindPopup(popup_3969d968668557c59a21637bd5377aac)
+        ;
+
+
+
+
+            marker_0634cdd41b6d3dec3c586d80f21c2a91.bindTooltip(
+                `<div>
+                     Pannonhalma
+                 </div>`,
+                {
+  "permanent": true,
+  "direction": "top",
+  "sticky": true,
+}
+            );
+
+
+                marker_0634cdd41b6d3dec3c586d80f21c2a91.setIcon(icon_fd3804212a63c12f998021034b0c064c);
+
+
+            map_dbf2c3575a8cdc1134024b70bda56e20.fitBounds(
+                [[46.076, 18.228], [47.553, 17.761], [47.485, 19.0548], [52.479, 13.352]],
+                {"padding": [50, 50]}
+            );
+
 </script>
 </html>
