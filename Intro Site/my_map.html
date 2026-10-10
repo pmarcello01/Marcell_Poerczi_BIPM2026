@@ -135,15 +135,47 @@
     
             marker_ae8a4bf2fd2802e7d2ad05e1d37e4703.bindTooltip(
                 `<div>
-                     Budapest
+                     Corvinus University of Budapest
                  </div>`,
                 {
-  "sticky": true,
+  "permanent": true,
+  "direction": "top",
 }
             );
         
     
                 marker_ae8a4bf2fd2802e7d2ad05e1d37e4703.setIcon(icon_bea5a7fca325db07b99d95db29444c57);
+
+            // Additional places featured in the journey carousel.
+            [
+                {
+                    name: "Pécs",
+                    coordinates: [46.076, 18.228],
+                    description: "My hometown in southern Hungary.",
+                    icon: "home",
+                    color: "green"
+                },
+                {
+                    name: "Pannonhalma",
+                    coordinates: [47.553, 17.761],
+                    description: "Where I went to high school.",
+                    icon: "graduation-cap",
+                    color: "orange"
+                }
+            ].forEach(function (place) {
+                L.marker(place.coordinates, {
+                    title: place.name,
+                    icon: L.AwesomeMarkers.icon({
+                        markerColor: place.color,
+                        iconColor: "white",
+                        icon: place.icon,
+                        prefix: "fa"
+                    })
+                })
+                    .addTo(map_c3f1bc9e132c68fbb4a16380b4e4dd1a)
+                    .bindTooltip(place.name, { permanent: true, direction: "top" })
+                    .bindPopup("<strong>" + place.name + "</strong><br>" + place.description);
+            });
             
     
             var marker_fb17bc2dd79fbf661747176941cae47e = L.marker(
