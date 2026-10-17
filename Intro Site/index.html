@@ -61,8 +61,8 @@
     nav a:hover, nav a[aria-current="location"] { color: var(--color-ink); }
     nav a:hover::after, nav a[aria-current="location"]::after { transform: scaleX(1); }
     .ai-badge { padding: 4px var(--space-2); border: 1px solid var(--color-border); border-radius: 999px; color: var(--color-muted); background: var(--color-surface); font-size: .6875rem; font-weight: 500; white-space: nowrap; }
-    main { display: grid; gap: var(--space-8); padding: var(--space-5) 0 var(--space-8); }
-    .hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr) 280px; align-items: center; gap: var(--space-6); margin: 0; padding: var(--space-9) var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius-panel); background: linear-gradient(115deg, #f3f7fa, #f9fcfd 65%, #edf6f9); }
+    main { display: grid; gap: var(--space-6); padding: var(--space-5) 0 var(--space-8); }
+    .hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr) 280px; align-items: center; gap: var(--space-6); margin: 0; padding: var(--space-6) var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius-panel); background: linear-gradient(115deg, #f3f7fa, #f9fcfd 65%, #edf6f9); }
     .eyebrow { display: flex; align-items: center; gap: var(--space-2); margin: 0 0 var(--space-4); color: var(--color-muted); font-size: .6875rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
     .eyebrow::before { content: ""; flex: 0 0 20px; height: 2px; background: var(--color-accent); }
     h1 { margin: 0 0 var(--space-4); font-size: clamp(3rem, 4.5vw, 4rem); line-height: 1.12; letter-spacing: -.045em; font-weight: 500; }
@@ -104,18 +104,23 @@
     .studies-title { margin-top: var(--space-6); }
     .carousel { min-width: 0; overflow: hidden; border: 1px solid var(--color-border); border-radius: var(--radius-panel); background: var(--color-surface-alt); }
     .carousel-heading { margin: 0; padding: var(--space-4) var(--space-5); font-size: 1.25rem; }
+    .carousel-slides { position: relative; --carousel-image-height: clamp(260px, 45vw, 520px); --carousel-image-padding: 64px; background: #e3eef3; }
     .carousel-slide { margin: 0; }
     .carousel-slide[hidden] { display: none; }
-    .carousel-slide img { display: block; width: 100%; height: clamp(260px, 45vw, 520px); object-fit: contain; background: #e3eef3; }
-    .carousel-slide figcaption { padding: var(--space-4) var(--space-5); }
+    .carousel-slide img { display: block; width: 100%; height: var(--carousel-image-height); padding-inline: var(--carousel-image-padding); object-fit: contain; background: #e3eef3; }
+    .carousel-slide figcaption { padding: var(--space-4) var(--space-5); background: var(--color-surface-alt); }
     .carousel-slide h3 { margin: 0 0 4px; font-size: 1.25rem; font-weight: 500; }
     .carousel-slide p { margin: 0; color: var(--color-muted); }
     .carousel-controls { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); padding: 0 var(--space-5) var(--space-4); }
-    .carousel-controls button { min-width: 44px; min-height: 44px; padding: 8px 14px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-ink); font: inherit; cursor: pointer; }
-    .carousel-controls button:hover { background: var(--color-accent-soft); }
-    .carousel-controls button:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+    .carousel button { min-width: 44px; min-height: 44px; padding: 8px 14px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-ink); font: inherit; cursor: pointer; }
+    .carousel button:hover { background: var(--color-accent-soft); }
+    .carousel button:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+    .carousel .carousel-arrow { position: absolute; top: calc(var(--carousel-image-height) / 2); transform: translateY(-50%); display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border-radius: 50%; box-shadow: var(--shadow-sm); transition: background-color 180ms ease, box-shadow 180ms ease; }
+    .carousel-arrow svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .carousel-arrow[data-carousel-prev] { left: 10px; }
+    .carousel-arrow[data-carousel-next] { right: 10px; }
     .carousel-dots { display: flex; gap: 4px; }
-    .carousel-dots button { min-width: 44px; padding: 0; border: 0; background: transparent; }
+    .carousel .carousel-dots button { min-width: 44px; padding: 0; border: 0; background: transparent; }
     .carousel-dots button::after { content: ''; display: block; width: 8px; height: 8px; margin: auto; border-radius: 50%; background: var(--color-border); }
     .carousel-dots button[aria-current="true"]::after { background: var(--color-accent); }
     .carousel-status { color: var(--color-muted); font-size: .8125rem; white-space: nowrap; }
@@ -130,15 +135,15 @@
     footer a:hover { color: var(--color-accent); text-decoration-color: currentColor; }
     @media (hover: hover) { tbody tr:hover { background: var(--color-canvas); } }
     @media (max-width: 1024px) {
-      .hero { grid-template-columns: minmax(0, 1fr) 240px; gap: var(--space-5); padding: var(--space-8) var(--space-5); }
+      .hero { grid-template-columns: minmax(0, 1fr) 240px; gap: var(--space-5); padding: var(--space-6) var(--space-5); }
       .background { padding: var(--space-5); }
     }
     @media (max-width: 800px) {
       .container { width: calc(100% - 48px); }
       nav { gap: var(--space-4); }
       header { flex-wrap: wrap; gap: var(--space-1); }
-      main { gap: var(--space-7); }
-      .hero { grid-template-columns: minmax(0, 1fr) 190px; padding: var(--space-7) var(--space-5); }
+      main { gap: var(--space-5); }
+      .hero { grid-template-columns: minmax(0, 1fr) 190px; padding: var(--space-5) var(--space-5); }
       h1 { font-size: 2.75rem; }
       .eyebrow { font-size: .625rem; letter-spacing: .08em; }
       .intro { font-size: 1rem; }
@@ -152,8 +157,8 @@
       nav a { font-size: .8125rem; }
       .ai-badge { font-size: .625rem; }
       section[id] { scroll-margin-top: 128px; }
-      main { gap: var(--space-6); padding-top: var(--space-4); padding-bottom: var(--space-6); }
-      .hero { grid-template-columns: 1fr; gap: var(--space-6); padding: var(--space-6) var(--space-4); border-radius: var(--radius-lg); }
+      main { gap: var(--space-4); padding-top: var(--space-4); padding-bottom: var(--space-6); }
+      .hero { grid-template-columns: 1fr; gap: var(--space-6); padding: var(--space-5) var(--space-4); border-radius: var(--radius-lg); }
       .portrait { grid-row: 1; width: 180px; justify-self: center; }
       .eyebrow { font-size: .625rem; letter-spacing: .07em; gap: var(--space-1); }
       .eyebrow::before { flex-basis: 12px; }
@@ -253,6 +258,8 @@
       <section class="carousel" id="places" aria-labelledby="carousel-title" aria-roledescription="carousel">
         <h2 class="carousel-heading" id="carousel-title">Places along my journey</h2>
         <div class="carousel-slides">
+          <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6" /></svg></button>
+          <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6" /></svg></button>
           <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 of 4">
             <img src="assets/P%C3%A9cs%20Photo.jpg" alt="The main square in Pécs, with its fountain and historic buildings" loading="lazy" />
             <figcaption><h3>Pécs</h3><p>My hometown, Pécs, is in southern Hungary, close to the Croatian border. During the Ottoman occupation, it was an important center and had five mosques. The city’s name is thought to derive from a Slavic word meaning “five,” possibly referring to five minaretts.</p></figcaption>
@@ -271,7 +278,6 @@
           </figure>
         </div>
         <div class="carousel-controls">
-          <button type="button" data-carousel-prev aria-label="Previous slide">←</button>
           <div class="carousel-dots" aria-label="Choose a slide">
             <button type="button" data-carousel-slide="0" aria-label="Show Pécs" aria-current="true"></button>
             <button type="button" data-carousel-slide="1" aria-label="Show Pannonhalma"></button>
@@ -279,7 +285,6 @@
             <button type="button" data-carousel-slide="3" aria-label="Show Corvinus University of Budapest"></button>
           </div>
           <span class="carousel-status" aria-live="polite" aria-atomic="true">1 / 4 · Pécs</span>
-          <button type="button" data-carousel-next aria-label="Next slide">→</button>
         </div>
       </section>
       <section class="map-section" id="map" aria-labelledby="map-title">
