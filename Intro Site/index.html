@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -70,8 +70,12 @@
     .intro { max-width: 670px; margin: 0; font-size: 1.125rem; line-height: 1.8; color: var(--color-muted); }
     .actions { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-5); }
     .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: var(--space-2) var(--space-4); border: 1px solid var(--color-ink); border-radius: var(--radius-md); text-decoration: none; font-weight: 600; font-size: .875rem; box-shadow: var(--shadow-sm); }
+    .button { gap: var(--space-2); }
+    .button-logo { width: 24px; height: 24px; object-fit: contain; flex-shrink: 0; }
+    .button.primary .button-logo { filter: brightness(0) invert(1); }
     .button.primary { background: var(--color-ink); color: var(--color-surface); }
     .button.primary:hover { background: #214e67; transform: translateY(-2px); box-shadow: 0 6px 16px rgb(21 59 80 / 14%); }
+    .button:not(.primary):hover { background: var(--color-accent-soft); transform: translateY(-2px); box-shadow: 0 6px 16px rgb(21 59 80 / 14%); }
     .portrait { position: relative; margin: 0; width: 100%; }
     .portrait::before { content: ""; position: absolute; z-index: -1; inset: 12px -12px -12px 12px; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: #e3eef3; transform: rotate(3deg); }
     .portrait::after { content: ""; position: absolute; right: -17px; top: var(--space-4); width: 5px; height: var(--space-6); border-radius: var(--radius-sm); background: var(--color-accent); }
@@ -176,7 +180,7 @@
       html { scroll-behavior: auto; }
       .page-pattern::before { transform: none; }
       *, *::before, *::after { transition: none !important; }
-      .button.primary:hover { transform: none; }
+      .button.primary:hover, .button:not(.primary):hover { transform: none; }
     }
   </style>
 </head>
@@ -200,7 +204,8 @@
         <h1 id="intro-title">Hi, I'm Marcell.<br /><span>I arrived from Budapest to Berlin and looking forward to starting my studies at HWR</span></h1>
         <p class="intro">I started working as a trade marketing intern at Bayer during my Bachelor studies. During this time I started to explore low-code tools, such as Microsoft Power Platform and n8n. These projects raised my interest in process management and data analysis, which led me to apply for BIPM @ HWR.</p>
         <div class="actions">
-          <a class="button primary" href="https://www.linkedin.com/in/marcell-porczi/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+          <a class="button primary" href="https://www.linkedin.com/in/marcell-porczi/" target="_blank" rel="noopener noreferrer"><img class="button-logo" src="assets/LI-In-Bug.png" alt="" width="24" height="24" />Connect on LinkedIn ↗</a>
+          <a class="button" href="https://github.com/pmarcello01/Marcell_Poerczi_BIPM2026" target="_blank" rel="noopener noreferrer"><img class="button-logo" src="assets/GitHub_Invertocat_Black.png" alt="" width="24" height="24" />View GitHub repository ↗</a>
         </div>
         </div>
         <figure class="portrait">
@@ -234,7 +239,11 @@
             <thead><tr><th scope="col">Institution &amp; degree</th><th scope="col">Period</th><th scope="col">Specialization &amp; grade</th></tr></thead>
             <tbody>
               <tr>
-                <th scope="row"><div class="organisation-entry"><img class="organisation-logo" src="assets/corvinus-logo.jpg" alt="Corvinus University logo" width="100" height="100" /><div><span class="entry-title">Corvinus University of Budapest</span><span class="entry-detail">Bachelor's degree, Business and Management</span></div></div></th>
+                <th scope="row"><div class="organisation-entry"><img class="organisation-logo" style="padding: 0;" src="assets/HWR%20logo.jpg" alt="HWR Berlin logo" width="100" height="100" /><div><span class="entry-title">Berlin School of Economics and Law</span><span class="entry-detail">Master's degree<br />Business Intelligence and Process Management</span></div></div></th>
+                <td>Oct 2026 -</td><td>Business Intelligence and Process Management (BIPM)</td>
+              </tr>
+              <tr>
+                <th scope="row"><div class="organisation-entry"><img class="organisation-logo" style="padding: 0;" src="assets/corvinus-logo.jpg" alt="Corvinus University logo" width="100" height="100" /><div><span class="entry-title">Corvinus University of Budapest</span><span class="entry-detail">Bachelor's degree<br />Business and Management</span></div></div></th>
                 <td>Sep 2022 – Jan 2026</td><td>Digital Business Specialization<span class="entry-detail">Grade: 92.4%</span><a class="entry-detail" href="assets/bsc-thesis-marcell-porczi.pdf" target="_blank" rel="noopener">BSc thesis (PDF) ↗</a></td>
               </tr>
             </tbody>
