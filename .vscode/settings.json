@@ -1,3 +1,11 @@
 {
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": "C:\\Program Files\\nodejs\\node.exe",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "DW_Class_1",
+            "database": "${workspaceFolder:Marcell_Poerczi_BIPM2026}/Data Warehousing/SQL Basics/sqlite-dvdrental.db"
+        }
+    ]
 }

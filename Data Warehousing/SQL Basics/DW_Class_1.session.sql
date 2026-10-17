@@ -106,6 +106,10 @@ SELECT title, length
 FROM film
 ORDER BY length DESC 
 LIMIT 1;
+--CODEX improved version:
+SELECT title, length
+FROM film
+WHERE length = (SELECT MAX(length) FROM film);
 
 	
 -- 18. Titles and length of all films that are shorter than the average length of all films sorted by lenght in ascending order 
@@ -122,9 +126,9 @@ GROUP BY rating;
 
 	
 -- 20. The number of films per language
-SELECT name, count(film_id)
-FROM 
-
+SELECT language.name, count(film_id)
+FROM film LEFT JOIN language USING (language_id)
+Group BY language.name;
 
 -- 21. The number of films per category sorted from highest to lowest
 SELECT category.name, count(film.title) AS no_of_films
@@ -133,7 +137,7 @@ USING (category_id)
 LEFT JOIN film
 USING (film_id)
 GROUP BY category.name
-ORDER BY no_of_films;
+ORDER BY no_of_films DESC;
 
 
 -- 22. Actor id, first name, and last name for all actors who have never appeared in a film rated ‘PG’. // LOOK OVER
@@ -141,66 +145,123 @@ SELECT DISTINCT actor_id, first_name, last_name
 FROM actor INNER JOIN film_actor USING(actor_id)
 WHERE actor.actor_id NOT IN (
 	SELECT film_actor.actor_id
-	FROM film LEFT JOIN film_actor USING (film_id)
+	FROM film INNER JOIN film_actor USING (film_id)
 	WHERE rating = 'PG'
 	);
 
 
 
 -- 23. List of actors and the number of films he/she played in ordered by that number from highest to lowest
-SELECT first_name, last_name, COUNT(film_id)
+SELECT actor_id, first_name, last_name, COUNT(film_id)
 FROM actor LEFT JOIN film_actor USING (actor_id)
-GROUP BY first_name, last_name
+GROUP BY actor_id, first_name, last_name
 ORDER BY COUNT(film_id) DESC
 ;
 -- 24. List of all the customers with id, first and last name who have rented more than 3 horror movies
-
-
+SELECT customer_id, first_name, last_name
+FROM customer INNER JOIN RENTAL USING (customer_id)
+LEFT JOIN inventory USING (inventory_id)
+LEFT JOIN film USING (film_id)
+LEFT JOIN film_category USING (film_id)
+LEFT JOIN category USING (category_id)
+WHERE category.name = "Horror"
+GROUP BY customer_id, first_name, last_name
+HAVING count(rental_id)>3;
 
 
 -- 25. How many actors have not acted in any film?
-
+SELECT count(actor_id)
+FROM actor LEFT JOIN film_actor USING (actor_id)
+WHERE film_id IS NULL;
 
 
 -- 26. How many DVDs are out on rent?
-
+SELECT count(rental_id)
+FROM rental
+WHERE return_date IS NULL;
 
 
 -- 27. Number of rentals per store
-
-
+SELECT store_id, count(rental_id)
+FROM store INNER JOIN inventory USING (store_id)
+INNER JOIN rental USING (inventory_id)
+GROUP BY store_id;
 	
 -- 28. All city we have stores in
-
-
+SELECT city.city
+FROM city LEFT JOIN address USING(city_id)
+LEFT JOIN store USING(address_id)
+WHERE store_id IS NOT NULL OR store_id <> "";
+SELECT city.city
+FROM city INNER JOIN address USING(city_id)
+INNER JOIN store USING(address_id);
 
 -- 29. Names of all customers that live in the same country as one of our stores
+SELECT DISTINCT first_name, last_name
+FROM address LEFT JOIN city USING (city_id)
+LEFT JOIN country USING (country_id)
+INNER JOIN customer USING (address_id)
+WHERE country IN (
+	SELECT country.country
+	FROM city INNER JOIN address USING(city_id)
+	INNER JOIN store USING(address_id)
+	LEFT JOIN country USING(country_id)
+	);
 
-
-	
 -- 30. List every actor and their total run time of sci-fi films they have been in.
-
+SELECT actor_id, actor.first_name, actor.last_name, sum(length) AS total_runtime
+FROM actor INNER JOIN film_actor USING (actor_id)
+INNER JOIN film using (film_id)
+LEFT JOIN film_category USING (film_id)
+LEFT JOIN category USING (category_id)
+WHERE category.name = "Sci-Fi"
+GROUP BY actor_id, first_name, last_name;
 
 	
 -- 31. What are the most common hours when people pay for a dvd rental? Order the payment hours by the number of payments 
-
+SELECT strftime('%H', payment_date) AS payment_hour,
+       COUNT(payment_id) AS payment_count
+FROM payment
+GROUP BY strftime('%H', payment_date)
+ORDER BY payment_count DESC;
 
 
 -- 32. Longest film rental duration and the customer who rented that film with the title of the film (tipp: not the rental duration in the film table)
-
-
+SELECT ROUND(MAX(julianday(return_date)-julianday(rental_date)),0) AS rental_duration_days, customer.first_name, customer.last_name, film.title
+FROM rental LEFT JOIN customer USING(customer_id)
+INNER JOIN inventory USING (inventory_id)
+INNER JOIN film USING (film_id)
+;
 
 -- 33. All customers who have the same first name
-
-
+SELECT customer_id, first_name, last_name
+FROM customer
+WHERE first_name IN (
+	SELECT first_name
+	FROM customer
+	GROUP BY first_name
+	HAVING count(first_name) > 1)
+ORDER BY first_name;
 
 -- 34. All films that are available only in one store
-
+SELECT title, count(DISTINCT store_id) AS availability
+FROM film INNER JOIN inventory USING (film_id)
+LEFT JOIN store USING (store_id)
+GROUP BY title
+HAVING availability=1;
 
 
 -- 35. All stores with their total revenue
-
+SELECT store_id, sum(amount)
+FROM payment LEFT JOIN staff USING (staff_id)
+GROUP BY store_id;
 
 
 -- 36. Create an interesting query of your own that is not already in the assignment. Give, along with the query, the question that the query is answering (as a comment) 
-	
+-- What are the five most rented films?
+SELECT title, count(rental_id)
+FROM rental LEFT JOIN inventory USING (inventory_id)
+LEFT JOIN film USING (film_id)
+GROUP BY title
+ORDER BY count(rental_id) DESC
+LIMIT 5;
