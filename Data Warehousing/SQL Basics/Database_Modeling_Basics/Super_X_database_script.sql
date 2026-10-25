@@ -42,8 +42,7 @@ VALUES
     (3, 1);
 
 -- QUERIES
-DROP TABLE results_master;
-CREATE TABLE results_master AS
+CREATE VIEW results_master AS
 SELECT
     race_name,
     DATE(races.start_time),
@@ -68,11 +67,11 @@ WHERE race_name IN (
     FROM runs
     GROUP BY race_name
     HAVING COUNT(DISTINCT player_name) >= 2
-)
+);
 -- a race is displayed only if there are at least two players;
 
 --INDIVIDUAL LEADERBOARD
-DROP TABLE individual_leaderboard;
+
 CREATE VIEW individual_leaderboard AS
 SELECT players.player_name, sum(points)
 FROM players 
@@ -81,7 +80,7 @@ FROM players
 GROUP BY players.player_name;
 
 --TEAM LEADERBOARD
-DROP TABLE team_leaderboard;
+
 CREATE VIEW team_leaderboard AS
 SELECT teams.name, SUM(points)
 FROM teams
