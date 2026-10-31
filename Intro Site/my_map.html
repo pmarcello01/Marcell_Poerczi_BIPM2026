@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-
+    
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_0a30a8f032a2de080211ce1e5f911786 {
+                #map_21aa23a37dd66c8a7e270c129d4c13fe {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -49,19 +49,19 @@
                 L_DISABLE_3D = false;
             </script>
 
-
+        
 </head>
 <body>
-
-
-            <div class="folium-map" id="map_0a30a8f032a2de080211ce1e5f911786" ></div>
-
+    
+    
+            <div class="folium-map" id="map_21aa23a37dd66c8a7e270c129d4c13fe" ></div>
+        
 </body>
 <script>
-
-
-            var map_0a30a8f032a2de080211ce1e5f911786 = L.map(
-                "map_0a30a8f032a2de080211ce1e5f911786",
+    
+    
+            var map_21aa23a37dd66c8a7e270c129d4c13fe = L.map(
+                "map_21aa23a37dd66c8a7e270c129d4c13fe",
                 {
                     center: [50.5, 16.3],
                     crs: L.CRS.EPSG3857,
@@ -74,11 +74,11 @@
                 }
             );
 
+            
 
-
-
-
-            var tile_layer_11a823f530e165a8021f389ce236fa4a = L.tileLayer(
+        
+    
+            var tile_layer_6b4376b8f5b73423da07fa07a74a3c1f = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -93,19 +93,19 @@
 }
 
             );
-
-
-            tile_layer_11a823f530e165a8021f389ce236fa4a.addTo(map_0a30a8f032a2de080211ce1e5f911786);
-
-
-            var marker_6e8068ac5e1b39f17105afb8842610c7 = L.marker(
+        
+    
+            tile_layer_6b4376b8f5b73423da07fa07a74a3c1f.addTo(map_21aa23a37dd66c8a7e270c129d4c13fe);
+        
+    
+            var marker_b4d040555199af634cc5fa623c025f98 = L.marker(
                 [47.485, 19.0548],
                 {
 }
-            ).addTo(map_0a30a8f032a2de080211ce1e5f911786);
-
-
-            var icon_b3743fd83eb470072d86aa1edbc6c698 = L.AwesomeMarkers.icon(
+            ).addTo(map_21aa23a37dd66c8a7e270c129d4c13fe);
+        
+    
+            var icon_5c7d4ce88d8e081d903ff0b5240e40c9 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -114,36 +114,36 @@
   "extraClasses": "fa-rotate-0",
 }
             );
-
-
-        var popup_4a17e300e5e4e08d4499f650e6928516 = L.popup({
+        
+    
+        var popup_1cef2599a447a521b7e2c849ac2e2996 = L.popup({
   "maxWidth": "100%",
 });
 
+        
+            
+                var html_d273cf91762ea56d523d36c9e3ee87e4 = $(`<div id="html_d273cf91762ea56d523d36c9e3ee87e4" style="width: 100.0%; height: 100.0%;">Bachelor's Degree at Corvinus University of Budapest</div>`)[0];
+                popup_1cef2599a447a521b7e2c849ac2e2996.setContent(html_d273cf91762ea56d523d36c9e3ee87e4);
+            
+        
 
-
-                var html_54d4da05e922b080c153c5c8286ea5ac = $(`<div id="html_54d4da05e922b080c153c5c8286ea5ac" style="width: 100.0%; height: 100.0%;">Bachelor's Degree at Corvinus University of Budapest</div>`)[0];
-                popup_4a17e300e5e4e08d4499f650e6928516.setContent(html_54d4da05e922b080c153c5c8286ea5ac);
-
-
-
-        marker_6e8068ac5e1b39f17105afb8842610c7.bindPopup(popup_4a17e300e5e4e08d4499f650e6928516)
+        marker_b4d040555199af634cc5fa623c025f98.bindPopup(popup_1cef2599a447a521b7e2c849ac2e2996)
         ;
 
-
-
-
-                marker_6e8068ac5e1b39f17105afb8842610c7.setIcon(icon_b3743fd83eb470072d86aa1edbc6c698);
-
-
-            var marker_75ae2cd3eece069faf2ff4e6f540a2c4 = L.marker(
+        
+    
+    
+                marker_b4d040555199af634cc5fa623c025f98.setIcon(icon_5c7d4ce88d8e081d903ff0b5240e40c9);
+            
+    
+            var marker_6d938039fbf0350e7a7e495cf4bacd72 = L.marker(
                 [52.479, 13.352],
                 {
 }
-            ).addTo(map_0a30a8f032a2de080211ce1e5f911786);
-
-
-            var icon_870a986de1f0581a39247a0c3cb77b73 = L.AwesomeMarkers.icon(
+            ).addTo(map_21aa23a37dd66c8a7e270c129d4c13fe);
+        
+    
+            var icon_b2ec46155dc630f855424791b9323474 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -152,36 +152,84 @@
   "extraClasses": "fa-rotate-0",
 }
             );
-
-
-        var popup_50e5917dc4d84d7cc4419b2773df3c14 = L.popup({
+        
+    
+        var popup_8088dbf065078529fd409a0c1eed79c5 = L.popup({
   "maxWidth": "100%",
 });
 
+        
+            
+                var html_ddc610cc11b85db3b6d2503cf6ad9815 = $(`<div id="html_ddc610cc11b85db3b6d2503cf6ad9815" style="width: 100.0%; height: 100.0%;">Master's Degree at HWR Berlin</div>`)[0];
+                popup_8088dbf065078529fd409a0c1eed79c5.setContent(html_ddc610cc11b85db3b6d2503cf6ad9815);
+            
+        
 
-
-                var html_534fd224afe10c374aacf9d5633caa69 = $(`<div id="html_534fd224afe10c374aacf9d5633caa69" style="width: 100.0%; height: 100.0%;">Master's Degree at HWR Berlin</div>`)[0];
-                popup_50e5917dc4d84d7cc4419b2773df3c14.setContent(html_534fd224afe10c374aacf9d5633caa69);
-
-
-
-        marker_75ae2cd3eece069faf2ff4e6f540a2c4.bindPopup(popup_50e5917dc4d84d7cc4419b2773df3c14)
+        marker_6d938039fbf0350e7a7e495cf4bacd72.bindPopup(popup_8088dbf065078529fd409a0c1eed79c5)
         ;
 
+        
+    
+    
+                marker_6d938039fbf0350e7a7e495cf4bacd72.setIcon(icon_b2ec46155dc630f855424791b9323474);
+            
+    
+            var marker_ff1d9c879f749660705168fe2f3053e1 = L.marker(
+                [41.7151, 44.8271],
+                {
+}
+            ).addTo(map_21aa23a37dd66c8a7e270c129d4c13fe);
+        
+    
+            var icon_d74ea5ca58ce58bbaa63e6a48f252090 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35d2f0d56118a44746f840e9fb544080 = L.popup({
+  "maxWidth": "100%",
+});
 
+        
+            
+                var html_ba1df06f212e67ba3a32b069b285161d = $(`<div id="html_ba1df06f212e67ba3a32b069b285161d" style="width: 100.0%; height: 100.0%;"><strong>Tbilisi, Georgia</strong><br>International relations summer program at Ilia State University.</div>`)[0];
+                popup_35d2f0d56118a44746f840e9fb544080.setContent(html_ba1df06f212e67ba3a32b069b285161d);
+            
+        
 
+        marker_ff1d9c879f749660705168fe2f3053e1.bindPopup(popup_35d2f0d56118a44746f840e9fb544080)
+        ;
 
-                marker_75ae2cd3eece069faf2ff4e6f540a2c4.setIcon(icon_870a986de1f0581a39247a0c3cb77b73);
-
-
-            var marker_d7278a10073e261ce6d06418b8a8b430 = L.marker(
+        
+    
+    
+            marker_ff1d9c879f749660705168fe2f3053e1.bindTooltip(
+                `<div>
+                     Tbilisi, Georgia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff1d9c879f749660705168fe2f3053e1.setIcon(icon_d74ea5ca58ce58bbaa63e6a48f252090);
+            
+    
+            var marker_3fba8fa2d28c3d4ba0d9d88acb028773 = L.marker(
                 [46.076, 18.228],
                 {
 }
-            ).addTo(map_0a30a8f032a2de080211ce1e5f911786);
-
-
-            var icon_edf7af83d94115ce663b61d9f54e8a7b = L.AwesomeMarkers.icon(
+            ).addTo(map_21aa23a37dd66c8a7e270c129d4c13fe);
+        
+    
+            var icon_c97cafdc8994b67dfbd442c49d62d5e8 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -190,36 +238,36 @@
   "extraClasses": "fa-rotate-0",
 }
             );
-
-
-        var popup_3c968071896a9ff7c1a349f7f209da33 = L.popup({
+        
+    
+        var popup_901f7e9ea8d70dc9b337bf51e5e0e29a = L.popup({
   "maxWidth": "100%",
 });
 
+        
+            
+                var html_327818add5d0970732620392c26222a8 = $(`<div id="html_327818add5d0970732620392c26222a8" style="width: 100.0%; height: 100.0%;"><strong>Pécs</strong><br>My hometown in southern Hungary.</div>`)[0];
+                popup_901f7e9ea8d70dc9b337bf51e5e0e29a.setContent(html_327818add5d0970732620392c26222a8);
+            
+        
 
-
-                var html_51102d4de2bfb9f622beb9d76d53a8be = $(`<div id="html_51102d4de2bfb9f622beb9d76d53a8be" style="width: 100.0%; height: 100.0%;"><strong>Pécs</strong><br>My hometown in southern Hungary.</div>`)[0];
-                popup_3c968071896a9ff7c1a349f7f209da33.setContent(html_51102d4de2bfb9f622beb9d76d53a8be);
-
-
-
-        marker_d7278a10073e261ce6d06418b8a8b430.bindPopup(popup_3c968071896a9ff7c1a349f7f209da33)
+        marker_3fba8fa2d28c3d4ba0d9d88acb028773.bindPopup(popup_901f7e9ea8d70dc9b337bf51e5e0e29a)
         ;
 
-
-
-
-                marker_d7278a10073e261ce6d06418b8a8b430.setIcon(icon_edf7af83d94115ce663b61d9f54e8a7b);
-
-
-            var marker_a36dcd8786e3102c72c5e7ccfae031bb = L.marker(
+        
+    
+    
+                marker_3fba8fa2d28c3d4ba0d9d88acb028773.setIcon(icon_c97cafdc8994b67dfbd442c49d62d5e8);
+            
+    
+            var marker_97cf0a17983766e404b6230cbc9f5d48 = L.marker(
                 [47.553, 17.761],
                 {
 }
-            ).addTo(map_0a30a8f032a2de080211ce1e5f911786);
-
-
-            var icon_abb9c4bc98916b8f991dcb1e27f4954d = L.AwesomeMarkers.icon(
+            ).addTo(map_21aa23a37dd66c8a7e270c129d4c13fe);
+        
+    
+            var icon_2d32b42ed642b011f6bb066c2b63e9bc = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -228,38 +276,38 @@
   "extraClasses": "fa-rotate-0",
 }
             );
-
-
-        var popup_f680641478a214b415c6fc5cc4f2d365 = L.popup({
+        
+    
+        var popup_ecffa96b4b5a7c5ba0829e84b7643751 = L.popup({
   "maxWidth": "100%",
 });
 
+        
+            
+                var html_0d77f4b73f0d3038c4a08855b3501ef3 = $(`<div id="html_0d77f4b73f0d3038c4a08855b3501ef3" style="width: 100.0%; height: 100.0%;"><strong>Pannonhalma</strong><br>Where I went to high school.</div>`)[0];
+                popup_ecffa96b4b5a7c5ba0829e84b7643751.setContent(html_0d77f4b73f0d3038c4a08855b3501ef3);
+            
+        
 
-
-                var html_1c6d2524e449e960f209aa1fb03a93a2 = $(`<div id="html_1c6d2524e449e960f209aa1fb03a93a2" style="width: 100.0%; height: 100.0%;"><strong>Pannonhalma</strong><br>Where I went to high school.</div>`)[0];
-                popup_f680641478a214b415c6fc5cc4f2d365.setContent(html_1c6d2524e449e960f209aa1fb03a93a2);
-
-
-
-        marker_a36dcd8786e3102c72c5e7ccfae031bb.bindPopup(popup_f680641478a214b415c6fc5cc4f2d365)
+        marker_97cf0a17983766e404b6230cbc9f5d48.bindPopup(popup_ecffa96b4b5a7c5ba0829e84b7643751)
         ;
 
-
-
-
-                marker_a36dcd8786e3102c72c5e7ccfae031bb.setIcon(icon_abb9c4bc98916b8f991dcb1e27f4954d);
-
-
-            var poly_line_a11741d0cfdacb960f17df2a2a325051 = L.polyline(
-                [[46.076, 18.228], [47.553, 17.761], [47.485, 19.0548], [52.479, 13.352]],
+        
+    
+    
+                marker_97cf0a17983766e404b6230cbc9f5d48.setIcon(icon_2d32b42ed642b011f6bb066c2b63e9bc);
+            
+    
+            var poly_line_21d42568f7c5dbaced63a682549c30d1 = L.polyline(
+                [[46.076, 18.228], [47.553, 17.761], [47.485, 19.0548], [41.7151, 44.8271], [52.479, 13.352]],
                 {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_0a30a8f032a2de080211ce1e5f911786);
-
-
-            map_0a30a8f032a2de080211ce1e5f911786.fitBounds(
-                [[46.076, 18.228], [47.553, 17.761], [47.485, 19.0548], [52.479, 13.352]],
+            ).addTo(map_21aa23a37dd66c8a7e270c129d4c13fe);
+        
+    
+            map_21aa23a37dd66c8a7e270c129d4c13fe.fitBounds(
+                [[46.076, 18.228], [47.553, 17.761], [47.485, 19.0548], [41.7151, 44.8271], [52.479, 13.352]],
                 {"padding": [50, 50]}
             );
-
+        
 </script>
 </html>
