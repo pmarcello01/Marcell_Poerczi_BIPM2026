@@ -13,19 +13,13 @@
         <mxCell id="WedaKjXV0H8ZTpaGme12-81" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-80">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-83" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-82">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-85" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-84">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-89" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-88">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="YxjmrdzXsq7wo9WVXymY-2" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="YxjmrdzXsq7wo9WVXymY-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="otTYGRBhuHNIspyrDgfD-1" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otTYGRBhuHNIspyrDgfD-5" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-82">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-3" parent="1" style="sketch=0;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.databases.database_cube;fillColor=#2072B8;labelPerimeter=1;" value="Sales" vertex="1">
@@ -137,19 +131,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-80" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Units_Sold" vertex="1">
-          <mxGeometry height="80" width="120" x="492" y="-900" as="geometry" />
+          <mxGeometry height="80" width="120" x="380" y="-790" as="geometry" />
         </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-82" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Revenue" vertex="1">
-          <mxGeometry height="80" width="120" x="492" y="-790" as="geometry" />
-        </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-84" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Selling_Price" vertex="1">
-          <mxGeometry height="80" width="120" x="492" y="-680" as="geometry" />
-        </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-88" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="List_Price" vertex="1">
-          <mxGeometry height="80" width="120" x="492" y="-1010" as="geometry" />
+          <mxGeometry height="80" width="120" x="380" y="-680" as="geometry" />
         </mxCell>
         <mxCell id="YxjmrdzXsq7wo9WVXymY-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Age_Group" vertex="1">
-          <mxGeometry height="80" width="120" x="492" y="-1120" as="geometry" />
+          <mxGeometry height="80" width="120" x="380" y="-910" as="geometry" />
         </mxCell>
         <mxCell id="otTYGRBhuHNIspyrDgfD-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="List_Price_Actual" vertex="1">
           <mxGeometry height="60" width="120" x="862" y="-220" as="geometry" />
