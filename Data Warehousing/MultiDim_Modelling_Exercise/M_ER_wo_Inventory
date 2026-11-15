@@ -82,13 +82,10 @@
         <mxCell id="WedaKjXV0H8ZTpaGme12-56" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERoneToMany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-50">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="otTYGRBhuHNIspyrDgfD-4" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.25;exitY=1;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;" target="otTYGRBhuHNIspyrDgfD-3" value="">
-          <mxGeometry relative="1" x="0.0039" as="geometry">
-            <Array as="points">
-              <mxPoint x="722" y="-420" />
-              <mxPoint x="720" y="-420" />
-              <mxPoint x="720" y="-190" />
-            </Array>
+        <mxCell id="otTYGRBhuHNIspyrDgfD-4" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.25;exitY=1;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="otTYGRBhuHNIspyrDgfD-3" value="">
+          <mxGeometry relative="1" x="0.0717" as="geometry">
+            <mxPoint x="714.0000000000005" y="-540.0000000000002" as="sourcePoint" />
+            <mxPoint x="854" y="-170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SKU_ID" vertex="1">
@@ -154,7 +151,7 @@
         <mxCell id="YxjmrdzXsq7wo9WVXymY-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Age_Group" vertex="1">
           <mxGeometry height="80" width="120" x="492" y="-1120" as="geometry" />
         </mxCell>
-        <mxCell id="otTYGRBhuHNIspyrDgfD-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="List_Price" vertex="1">
+        <mxCell id="otTYGRBhuHNIspyrDgfD-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="List_Price_Actual" vertex="1">
           <mxGeometry height="60" width="120" x="862" y="-220" as="geometry" />
         </mxCell>
       </root>
