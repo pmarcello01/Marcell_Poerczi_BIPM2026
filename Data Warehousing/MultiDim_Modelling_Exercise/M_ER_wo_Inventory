@@ -1,0 +1,200 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="nvFpDDMpfTu-yeZAYAXV">
+    <mxGraphModel dx="1717" dy="2047" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WedaKjXV0H8ZTpaGme12-15" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="822" y="-680" />
+              <mxPoint x="822" y="-600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-29" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-16">
+          <mxGeometry relative="1" x="0.4286" as="geometry">
+            <Array as="points">
+              <mxPoint x="752" y="-500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-45" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-81" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-83" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-85" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-89" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YxjmrdzXsq7wo9WVXymY-2" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="YxjmrdzXsq7wo9WVXymY-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-3" parent="1" style="sketch=0;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.databases.database_cube;fillColor=#2072B8;labelPerimeter=1;" value="Sales" vertex="1">
+          <mxGeometry height="80" width="80" x="712" y="-720" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-12" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERmany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-13" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERmany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-6">
+          <mxGeometry relative="1" x="0.0061" as="geometry">
+            <Array as="points">
+              <mxPoint x="962" y="-690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Day" vertex="1">
+          <mxGeometry height="60" width="120" x="902" y="-630" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-14" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERmany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-9">
+          <mxGeometry relative="1" x="0.0027" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Week" vertex="1">
+          <mxGeometry height="60" width="120" x="1072" y="-720" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-11" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERmany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Month" vertex="1">
+          <mxGeometry height="60" width="120" x="1072" y="-630" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-10" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERmany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Quarter" vertex="1">
+          <mxGeometry height="60" width="120" x="1237" y="-630" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Year" vertex="1">
+          <mxGeometry height="60" width="120" x="1402" y="-630" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-52" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERoneToMany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="992" y="-400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-55" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERoneToMany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="962" y="-300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-56" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERoneToMany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SKU_ID" vertex="1">
+          <mxGeometry height="60" width="120" x="902" y="-530" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-23" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="SKU_Material" vertex="1">
+          <mxGeometry height="60" width="120" x="1072" y="-230" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-24" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="SKU_Accessory&lt;br&gt;_Type" vertex="1">
+          <mxGeometry height="60" width="120" x="1072" y="-330" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-32" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERoneToMany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-30" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Phone_Model" vertex="1">
+          <mxGeometry height="60" width="120" x="1072" y="-430" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-31" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Phone_Brand" vertex="1">
+          <mxGeometry height="60" width="120" x="1237" y="-430" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-38" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERoneToMany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-40" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERoneToMany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-39" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Customer_ID" vertex="1">
+          <mxGeometry height="60" width="120" x="692" y="-820" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-44" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERoneToMany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Country" vertex="1">
+          <mxGeometry height="60" width="120" x="692" y="-920" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Date_of_Birth" vertex="1">
+          <mxGeometry height="60" width="120" x="872" y="-920" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Region" vertex="1">
+          <mxGeometry height="60" width="120" x="692" y="-1020" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Manufacturer" vertex="1">
+          <mxGeometry height="60" width="120" x="1072" y="-530" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-57" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERoneToMany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-23">
+          <mxGeometry relative="1" x="-0.6341" as="geometry">
+            <Array as="points">
+              <mxPoint x="932" y="-200" />
+            </Array>
+            <mxPoint x="932" y="-470" as="sourcePoint" />
+            <mxPoint x="1012" y="-400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-59" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="822" y="-370" />
+              <mxPoint x="822" y="-600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-65" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-75" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-87" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-58" parent="1" style="sketch=0;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.databases.database_cube;fillColor=#2072B8;labelPerimeter=1;" value="Inventory" vertex="1">
+          <mxGeometry height="80" width="80" x="432" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-66" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-16">
+          <mxGeometry relative="1" x="0.0469" as="geometry">
+            <Array as="points">
+              <mxPoint x="752" y="-230" />
+              <mxPoint x="752" y="-500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Batch_ID" vertex="1">
+          <mxGeometry height="60" width="120" x="412" y="-260" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-74" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Stock_&lt;span style=&quot;text-decoration-line: inherit; background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Units&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="132" y="-510" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-80" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Units_Sold" vertex="1">
+          <mxGeometry height="80" width="120" x="492" y="-830" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-82" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Revenue" vertex="1">
+          <mxGeometry height="80" width="120" x="492" y="-720" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-84" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Selling_Price" vertex="1">
+          <mxGeometry height="80" width="120" x="492" y="-610" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-86" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="DistinctCount_of_&lt;br&gt;SKUs_Available" vertex="1">
+          <mxGeometry height="80" width="120" x="292" y="-510" as="geometry" />
+        </mxCell>
+        <mxCell id="WedaKjXV0H8ZTpaGme12-88" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="List_Price" vertex="1">
+          <mxGeometry height="80" width="120" x="492" y="-940" as="geometry" />
+        </mxCell>
+        <mxCell id="YxjmrdzXsq7wo9WVXymY-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Age_Group" vertex="1">
+          <mxGeometry height="80" width="120" x="492" y="-1050" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
