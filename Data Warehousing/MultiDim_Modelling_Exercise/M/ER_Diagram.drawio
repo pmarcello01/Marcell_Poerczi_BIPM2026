@@ -173,14 +173,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-70" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERone;startFill=0;" target="WedaKjXV0H8ZTpaGme12-67">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Batch_ID" vertex="1">
           <mxGeometry height="60" width="120" x="500" y="-270" as="geometry" />
-        </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Unit_Purchase_Price" vertex="1">
-          <mxGeometry height="60" width="120" x="500" y="-130" as="geometry" />
         </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-74" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Stock_&lt;span style=&quot;text-decoration-line: inherit; background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Units&lt;/span&gt;" vertex="1">
           <mxGeometry height="80" width="120" x="220" y="-520" as="geometry" />
