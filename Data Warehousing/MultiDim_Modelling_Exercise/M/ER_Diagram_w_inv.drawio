@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="nvFpDDMpfTu-yeZAYAXV">
-    <mxGraphModel dx="5421" dy="3943" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1717" dy="2047" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -32,6 +32,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-89" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="WedaKjXV0H8ZTpaGme12-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YxjmrdzXsq7wo9WVXymY-2" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="YxjmrdzXsq7wo9WVXymY-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-3" parent="1" style="sketch=0;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.databases.database_cube;fillColor=#2072B8;labelPerimeter=1;" value="Sales" vertex="1">
@@ -121,14 +124,8 @@
         <mxCell id="WedaKjXV0H8ZTpaGme12-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Country" vertex="1">
           <mxGeometry height="60" width="120" x="692" y="-920" as="geometry" />
         </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-42" edge="1" parent="1" source="WedaKjXV0H8ZTpaGme12-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=ERmany;startFill=0;" target="WedaKjXV0H8ZTpaGme12-41" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Age" vertex="1">
+        <mxCell id="WedaKjXV0H8ZTpaGme12-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Date_of_Birth" vertex="1">
           <mxGeometry height="60" width="120" x="872" y="-920" as="geometry" />
-        </mxCell>
-        <mxCell id="WedaKjXV0H8ZTpaGme12-41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Age_Group" vertex="1">
-          <mxGeometry height="60" width="120" x="872" y="-1020" as="geometry" />
         </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Region" vertex="1">
           <mxGeometry height="60" width="120" x="692" y="-1020" as="geometry" />
@@ -193,6 +190,9 @@
         </mxCell>
         <mxCell id="WedaKjXV0H8ZTpaGme12-88" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="List_Price" vertex="1">
           <mxGeometry height="80" width="120" x="492" y="-940" as="geometry" />
+        </mxCell>
+        <mxCell id="YxjmrdzXsq7wo9WVXymY-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Age_Group" vertex="1">
+          <mxGeometry height="80" width="120" x="492" y="-1050" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
